@@ -15,4 +15,8 @@ The CloudLayer Content Delivery Network (CDN) is IBM Cloud’s legacy solution f
 This documentation collection refers to a legacy offering. To learn about our new CDN solution please read on [here](https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn).
 
 
+<<<<<<< HEAD
+=======
+Read more [here](access-cdn-screen.html).
+>>>>>>> 2af56a7457b82d05da2e3bf04f23c31c048f8423
 
