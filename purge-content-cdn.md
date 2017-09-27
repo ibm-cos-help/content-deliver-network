@@ -2,13 +2,26 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# How do I Purge Content from the CDN?
+# Purging Content from the CDN
+
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
+
+
 Content that has been cached on an edge server can be purged at any time. A typical reason for why you would want to purge on-demand content is that you have a newer version of an asset.  In such a case, the old version of the asset will continue to be served out by our edge server until it either checks for a new version, the content expires, or it is purged.
 
 **Important**: Purging is not the same thing as deleting content from the origin server. Purging an asset will not delete the source asset. It will simply remove the cached instance of that asset from all of our edge servers. If you would like to remove the original asset, then you will need to delete it from the origin server through your preferred FTP client.

@@ -2,15 +2,26 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-06-29"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Compress an Asset Using Gzip
+# Compressing an Asset Using Gzip
 
-Gzip compression is a feature of the CDN that will optimize content delivery speed and allow for bandwidth savings due to smaller files being sent to capable browsers. How this works is that a request to the CDN is made, the requested file is delivered in a compressed format and the browser decompresses the file.  This feature is currently available only for Origin Pull configurations.
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
+
+Gzip compression is a feature of the Storage CDN that will optimize content delivery speed and allow for bandwidth savings due to smaller files being sent to capable browsers. How this works is that a request to the CDN is made, the requested file is delivered in a compressed format and the browser decompresses the file.  This feature is currently available only for Origin Pull configurations.
 
 An asset can be compressed on an origin server before it is delivered to an edge server. The process through which requested content is compressed is outlined below.
 
@@ -42,20 +53,20 @@ Gzip support will work without the “Vary: Accept-Encoding” header however if
 By default neither of these headers may exist on the web server so you may need to modify your web server configuration accordingly.
 To enable Gzip compression support on the origin web server these guides will help.
 
-- [Compression for Apache 2.2](http://httpd.apache.org/docs/2.2/mod/mod_deflate.html)
-- [Compression for Apache 2.0](http://httpd.apache.org/docs/2.0/mod/mod_deflate.html)
-- [Compression for IIS 7](http://technet.microsoft.com/en-us/library/cc771003%28WS.10%29.aspx)
-- [Compression for IIS 6](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/92f627a8-4ec3-480c-b0be-59a561091597.mspx?mfr=true)
-- [Compression for lighttpd](http://redmine.lighttpd.net/wiki/1/Docs:ModCompress)
-- [Compression for nginx](http://wiki.nginx.org/NginxHttpGzipModule)
+- [Compression for Apache 2.2](http://httpd.apache.org/docs/2.2/mod/mod_deflate.html){:new_window}
+- [Compression for Apache 2.0](http://httpd.apache.org/docs/2.0/mod/mod_deflate.html){:new_window}
+- [Compression for IIS 7](http://technet.microsoft.com/en-us/library/cc771003%28WS.10%29.aspx){:new_window}
+- [Compression for IIS 6](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/92f627a8-4ec3-480c-b0be-59a561091597.mspx?mfr=true){:new_window}
+- [Compression for lighttpd](http://redmine.lighttpd.net/wiki/1/Docs:ModCompress){:new_window}
+- [Compression for nginx](http://wiki.nginx.org/NginxHttpGzipModule){:new_window}
 
 To manually add headers such as ``Vary: Accept-Encoding``  to the http response of the origin web server these guides will help as well.
 
-- [HTTP headers Apache 2.2](http://httpd.apache.org/docs/2.2/mod/mod_headers.html)
-- [HTTP headers  Apache 2.0](http://httpd.apache.org/docs/2.0/mod/mod_headers.html)
-- [HTTP headers  IIS 7](http://technet.microsoft.com/en-us/library/cc753133%28WS.10%29.aspx)
-- [HTTP headers  IIS 6](http://technet.microsoft.com/en-us/library/cc732442.aspx)
-- [HTTP headers lighttpd](http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs:ModSetEnv)
-- [HTTP headers  nginx](http://wiki.nginx.org/NginxHttpHeadersModule)
+- [HTTP headers Apache 2.2](http://httpd.apache.org/docs/2.2/mod/mod_headers.html){:new_window}
+- [HTTP headers  Apache 2.0](http://httpd.apache.org/docs/2.0/mod/mod_headers.html){:new_window}
+- [HTTP headers  IIS 7](http://technet.microsoft.com/en-us/library/cc753133%28WS.10%29.aspx){:new_window}
+- [HTTP headers  IIS 6](http://technet.microsoft.com/en-us/library/cc732442.aspx){:new_window}
+- [HTTP headers lighttpd](http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs:ModSetEnv){:new_window}
+- [HTTP headers  nginx](http://wiki.nginx.org/NginxHttpHeadersModule){:new_window}
 
-**Note**: For IIS servers you may need to add the HcNoCompressionForProxies metabase key to the web server’s configuration as IIS by default will block requests containing the Via header which is standard in Squid proxy caching requests ( the CDN uses this for Origin Pull). For more information on this refer to [this article on #12](http://blogs.msdn.com/mike/archive/2007/12/06/troubleshooting-http-compression-in-iis6.aspx),
+**Note**: For IIS servers you may need to add the HcNoCompressionForProxies metabase key to the web server’s configuration as IIS by default will block requests containing the Via header which is standard in Squid proxy caching requests (the CDN uses this for Origin Pull). For more information on this refer to [this article on #12](http://blogs.msdn.com/mike/archive/2007/12/06/troubleshooting-http-compression-in-iis6.aspx){:new_window}.

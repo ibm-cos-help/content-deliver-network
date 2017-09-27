@@ -2,19 +2,30 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-06-28"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# View CDN Usage on a Graph
+# Viewing Storage CDN Usage on a Graph
+
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
 
 Usage for a CDN account may be viewed at any time in the Customer Portal on a Usage Graph. Usage Graphs display either bandwidth or FTP usage on your CDN Account for a variety of date ranges that may be selected when setting up the graph. Follow the steps below to view CDN usage on a graph.
 
 ## View CDN Usage
 
-1. Access the **CDN** screen on the Customer Portal. Refer to [Access the CDN Screen](access-cdn-screen.html).
+1. Access the **CDN** screen on the [Customer Portal](https://control.softlayer.com/){:new_window}. Refer to [Access the CDN Screen](access-cdn-screen.html).
 2. Click the **Account ID** for the desired CDN Account to access the account.
 3. Click the **Usage** tab.
 4. Select the type of usage to be displayed from the **Type** drop down list.

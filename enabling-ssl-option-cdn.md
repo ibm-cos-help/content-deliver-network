@@ -2,15 +2,27 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-12"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Enabling the SSL Option for CDN
+# Enabling the SSL Option for Storage CDN
 
-SoftLayer offers Content Delivery Network (CDN) options via EdgeCast. The service includes the ability to deliver content using HTTPS or Secure Socket Layer (SSL) connections. 
+
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
+
+IBM Cloud Infrastructure offers Content Delivery Network (CDN) options via EdgeCast. The service includes the ability to deliver content using HTTPS or Secure Socket Layer (SSL) connections. 
 
 
 ## Considerations
@@ -21,7 +33,7 @@ There are two options for SSL with CDN:
 
 - *Customer-specific certificates* are certificates provided by the customer that are installed on the CDN server. They allow customer-specific URLs to be protected with SSL. Customer-specific certificates require manual processes and have significant yearly costs associated with them.
 
-SoftLayer CDN accounts are provisioned with SSL disabled. Once SSL is enabled, they use the SoftLayer wildcard SSL.
+Storage CDN accounts are provisioned with SSL disabled. Once SSL is enabled, they use the SoftLayer wildcard SSL.
 
 
 ## Pre-requisites  

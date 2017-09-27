@@ -2,19 +2,30 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-06-28"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Attach EdgeCast CDN account to SL Object Storage
+# Attaching EdgeCast CDN account to SL Object Storage
+
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
 
 ## Enable your container(s) for public CDN access
 
 ### If you primarily wish to use the Control portal:
 
- 1. Log in to the [Control portal](https://control.softlayer.com/), and navigate to **Storage** > **Object Storage**.
+ 1. Log in to the [Control portal](https://control.softlayer.com/){:new_window}, and navigate to **Storage** > **Object Storage**.
  
  2. Select the account then the Data center where your containers exist.
        **Note**: if you only have one object storage account, a DC list rather than an account list is displayed.

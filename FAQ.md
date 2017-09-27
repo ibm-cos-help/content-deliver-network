@@ -2,13 +2,25 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-31"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# CDN FAQ
+# Storage CDN FAQ
+
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
+
 
 ## What is a Content Delivery Network (CDN)?
 
@@ -167,7 +179,7 @@ Renaming a file on CDN is not permitted as there isn’t a way to track those ch
 
 ## Is CDN integration Available on my Object Storage Account?
 
-Yes, CDN integration is a standard feature on all Object Storage accounts.  All interactions with the CDN portion of your account must be managed through SoftLayer’s API and CDN integration must be activated on your account prior to its use.  For more information on interactions with the CDN portion of your Object Storage account, refer to the [Object Storage CDN](http://sldn.softlayer.com/reference/Object-Storage-CDN) reference page of the SLDN.
+Yes, CDN integration is a standard feature on all Object Storage accounts.  All interactions with the CDN portion of your account must be managed through SoftLayer’s API and CDN integration must be activated on your account prior to its use.  For more information on interactions with the CDN portion of your Object Storage account, refer to the [Object Storage CDN](http://sldn.softlayer.com/reference/Object-Storage-CDN){:new_window} reference page of the SLDN.
 
 ## Does SoftLayer Partner with Another Company to Deliver the CDN?
 
@@ -246,4 +258,4 @@ Existing users may create a ticket to request the Asia Premium package for CDN. 
 
 ## Who Should Use CDN? What Kind of Content Is It Best Suited For?
 
-Any company or individual that wants to make content available on the Internet should consider CDN, particularly those wanting to deliver content that requires large transfer rates, such as video. This includes a wide variety of industries, as caching, streaming, and downloading services are a regular part of social networking, entertainment, media, gaming, software, broadcast, e-commerce, and e-banking websites alike. In the past CDNs were so expensive that only large companies could use them. IBM Bluemix’s CDN brings the expense of operating a CDN down to a price more affordable by all types of companies and offers them a chance to use an enterprise-level product without the headache or high expense.
+Any company or individual that wants to make content available on the Internet should consider CDN, particularly those wanting to deliver content that requires large transfer rates, such as video. This includes a wide variety of industries, as caching, streaming, and downloading services are a regular part of social networking, entertainment, media, gaming, software, broadcast, e-commerce, and e-banking websites alike. In the past CDNs were so expensive that only large companies could use them. IBM Cloud's CDN brings the expense of operating a CDN down to a price more affordable by all types of companies and offers them a chance to use an enterprise-level product without the headache or high expense.

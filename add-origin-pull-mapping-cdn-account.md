@@ -2,13 +2,24 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-06-28"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Add Origin Pull Mapping to a CDN Account
+# Adding Origin Pull Mapping to a Storage CDN Account
+
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
 
 Origin Pull mapping allows the content requested by a user to be pulled from your origin server rather than the CDN FTP server. Origin Pull mapping enables you to manage content in a single location on your server, rather than managing content on the CDN FTP server, as well. Content is cached from your server and when requested, is produced for the user. Follow the steps below to add Origin Pull mapping to a CDN Account.
 
@@ -32,4 +43,4 @@ Origin Pull mapping allows the content requested by a user to be pulled from you
 
 ## What Happens Next
 
-After adding origin pull mapping to the CDN Account, the cached content will be stored on the [Customer Portal](https://control.softlayer.com/) and produced for the user when it is requested. It may be updated or removed at any time.
+After adding origin pull mapping to the CDN Account, the cached content will be stored on the [Customer Portal](https://control.softlayer.com/){:new_window} and produced for the user when it is requested. It may be updated or removed at any time.

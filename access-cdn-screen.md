@@ -2,19 +2,29 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-06-28"
+lastupdated: "2017-09-27"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Access the CDN Screen
+# Accessing the Storage CDN Screen
+<table class="wrapped">
+        <colgroup>
+          <col/>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>This documentation refers to a legacy offering. To learn about our new CDN solution please read on <a href="https://console.bluemix.net/docs/infrastructure/CDN/about.html#about-cdn">here</a>.</th>
+          </tr>
+        </tbody>
+</table>
 
 Prior to interacting with your CDN service on the Customer Portal, the CDN screen must be accessed. Follow the steps below to access the CDN screen.
 
 ## Access the CDN Screen
 
-1. Log on to the [Customer Portal](https://control.softlayer.com/) using your unique credentials.
+1. Log on to the [Customer Portal](https://control.softlayer.com/){:new_window} using your unique credentials.
 2. Select **Storage** > **CDN** from the Navigation Bar to access the CDN screen.
 
 
