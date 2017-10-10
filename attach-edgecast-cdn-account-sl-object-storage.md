@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-09-27"
+lastupdated: "2017-10-10"
 
 ---
 {:new_window: target="_blank"}
@@ -21,13 +21,13 @@ lastupdated: "2017-09-27"
         </tbody>
 </table>
 
-## Enable your container(s) for public CDN access
+## Enable your container(s) for public Storage CDN access
 
 ### If you primarily wish to use the Control portal:
 
  1. Log in to the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}, and navigate to **Storage** > **Object Storage**.
  
- 2. Select the account then the Data center where your containers exist.
+ 2. Select the account then the Data center where your containers exist. <br/>
        **Note**: if you only have one object storage account, a DC list rather than an account list is displayed.
  
  3. Click once on a container you wish to make public.
@@ -75,7 +75,7 @@ lastupdated: "2017-09-27"
     - Add the CNAME record to your domain’s DNS records to point to the **Points To** column on the resulting screen, omitting the ``http://`` portion.
     
     
-## Linking to content in Object Storage (Swift) via the CDN
+## Linking to content in Object Storage (Swift) via the Edgecast Storage CDN
 
 - Determine Base URL:
    - If you added a CNAME for your Customer Origin, use that as the basis for your URL (for instance, http://slcdn01.example.com).
