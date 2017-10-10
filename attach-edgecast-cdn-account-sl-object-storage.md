@@ -8,7 +8,7 @@ lastupdated: "2017-09-27"
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Attaching EdgeCast CDN account to SL Object Storage
+# Attaching EdgeCast CDN account to Object Storage (Swift)
 
 <table class="wrapped">
         <colgroup>
@@ -25,7 +25,7 @@ lastupdated: "2017-09-27"
 
 ### If you primarily wish to use the Control portal:
 
- 1. Log in to the [Control portal](https://control.softlayer.com/){:new_window}, and navigate to **Storage** > **Object Storage**.
+ 1. Log in to the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}, and navigate to **Storage** > **Object Storage**.
  
  2. Select the account then the Data center where your containers exist.
        **Note**: if you only have one object storage account, a DC list rather than an account list is displayed.
@@ -75,7 +75,7 @@ lastupdated: "2017-09-27"
     - Add the CNAME record to your domain’s DNS records to point to the **Points To** column on the resulting screen, omitting the ``http://`` portion.
     
     
-## Linking to content in Object Storage via the CDN
+## Linking to content in Object Storage (Swift) via the CDN
 
 - Determine Base URL:
    - If you added a CNAME for your Customer Origin, use that as the basis for your URL (for instance, http://slcdn01.example.com).
