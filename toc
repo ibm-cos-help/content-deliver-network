@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="storage-CDN" audience="services" href="/docs/infrastructure/content-deliver-network/index.html"}
+{: .toc subcollection="content-deliver-network" audience="services" href="/docs/infrastructure/content-deliver-network/index.html"}
 IBM Cloud Storage Content Delivery Network
 
     {: .navgroup id="learn"}
